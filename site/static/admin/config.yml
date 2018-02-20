@@ -88,5 +88,5 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Hero Image", name: "image", widget: "image", required: false}
-	  - {label: "Background Youtube video Id", name: "videoBkgd", widget: "string"}
+      - {label: "Background Youtube video Id", name: "videoBkgd", widget: "string"}
       - {label: "Body", name: "body", widget: "markdown"}              
