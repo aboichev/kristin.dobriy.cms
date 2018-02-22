@@ -6,7 +6,8 @@ public_folder: "img"
 
 collections: # A list of collections the CMS should be able to edit
   - name: "series" # Used in routes, ie.: /admin/collections/:slug/edit
-    label: "Цыкл" # Used in the UI, ie.: "New Post"
+    label: "Цыклы" # Used in the UI, ie.: "New Post"
+    label_singular: "Цыкл"
     folder: "site/content/series" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     fields: # The fields each document in this collection have
@@ -17,7 +18,7 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Youtube Audio Id", name: "youTubeAudioId", widget: "string", required: false}
       - {label: "Body", name: "body", widget: "markdown"}
   - name: "pages"
-    label: "Домашняя страница"
+    label: "Страницы"
     files:
       - file: "site/content/_index.md"
         label: "Домашняя страница"
@@ -26,6 +27,14 @@ collections: # A list of collections the CMS should be able to edit
         fields:
           - {label: Заголовок, name: title, widget: string}
           - {label: Умная цитата, name: subtitle, widget: string}
-          - {label: Image, name: image, widget: image, required: false}
           - {label: "Youtube Video Id", name: youTubeVideoId, widget: "string", required: false}
           - {label: "Youtube Audio Id", name: "youTubeAudioId", widget: "string", required: false}
+      - file: "site/content/series/_index.md"
+        label: "Список цыклов"
+        name: "series"
+        delete: false
+        fields:
+          - {label: Заголовок, name: title, widget: string}
+          - {label: Умная цитата, name: subtitle, widget: string}
+          - {label: "Youtube Video Id", name: youTubeVideoId, widget: "string", required: false}
+          - {label: "Youtube Audio Id", name: "youTubeAudioId", widget: "string", required: false}     
