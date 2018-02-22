@@ -1,16 +1,29 @@
 {{ define "main" }}
-
-{{ partial "jumbotron" (dict "imageUrl" "/img/blog-index.jpg" "title" "Latest stories") }}
-
-<div class="mw7 center">
-  <ul class="flex-ns flex-wrap mhn1-ns pa3">
-      {{ range (.Paginator 4).Pages.ByPublishDate }}
-          <div class="w-50-ns ph1-ns flex">
-            {{ .Render "li"}}
-          </div>
+<main>
+<div id="vidtop-content">
+  <div class="vid-info">
+      <h1>{{ .Title | default .Site.Title }}</h1>
+      <div>
+        {{ .Content }}
+      </div>
+      {{ with .Parent }}
+      <p>
+        <a href="{{ .RelPermalink }}">Домой</a>
+      </p>
       {{ end }}
-  </ul>
-  {{ partial "pagination" . }}
-</div>
 
-{{end}}
+      {{ range .Sections }}
+      <p>
+        <a href="{{ .RelPermalink }}">{{.Title}}</a>    
+      </p>
+      {{ end }}
+
+      {{ range .Pages }}
+        <div>
+          <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+        </div>
+      {{ end }}
+  </div>
+</div>
+</main>
+{{ end }}

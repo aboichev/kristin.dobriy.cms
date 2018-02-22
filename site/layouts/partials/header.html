@@ -1,0 +1,10 @@
+<div id="vidtop-content">
+  <div class="vid-info">
+      <h1>{{ .Title | default .Site.Title }}</h1>
+      {{ with .Params.description }}
+        <p>
+          {{ . }}
+        </p>
+      {{ end }}
+  </div>
+</div>

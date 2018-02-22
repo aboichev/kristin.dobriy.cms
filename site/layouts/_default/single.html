@@ -1,6 +1,15 @@
 {{ define "main" }}
-
-{{ partial "jumbotron" (dict "imageUrl" "/img/7.jpg" "title" "This is where the heading goes" "subtitle" "This is where the subtitle goes") }}
-{{ .Content }}
-
+<main>
+<div id="vidtop-content">
+  <div class="vid-info">
+      <h1>{{ .Title | default .Site.Title }}</h1>
+      <div>
+        {{ .Content }}
+      </div>
+      <p>
+        <a href="{{ .CurrentSection.RelPermalink }}">Другие цыклы</a>
+      </p>
+  </div>
+</div>
+</main>
 {{ end }}
