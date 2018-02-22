@@ -13,8 +13,8 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Intro Blurb", name: "description", widget: "text", required: false}
-      - {label: "Youtube Video Id", name: "youTubeVideoId", widget: "text", required: false}
-      - {label: "Youtube Audio Id", name: "youTubeAudioId", widget: "text", required: false}
+      - {label: "Youtube Video Id", name: "youTubeVideoId", widget: "string", required: false}
+      - {label: "Youtube Audio Id", name: "youTubeAudioId", widget: "string", required: false}
       - {label: "Body", name: "body", widget: "markdown"}
   - name: "pages"
     label: "Домашняя страница"
@@ -26,5 +26,5 @@ collections: # A list of collections the CMS should be able to edit
           - {label: Заголовок, name: title, widget: string}
           - {label: Умная цитата, name: subtitle, widget: string}
           - {label: Image, name: image, widget: image, required: false}
-          - {label: "Youtube Video Id", name: youTubeVideoId, widget: "text", required: false}
-          - {label: "Youtube Audio Id", name: "youTubeAudioId", widget: "text", required: false}
+          - {label: "Youtube Video Id", name: youTubeVideoId, widget: "string", required: false}
+          - {label: "Youtube Audio Id", name: "youTubeAudioId", widget: "string", required: false}
