@@ -1,6 +1,5 @@
 ---
 title: Океан Мудрости Кристина Доброго
-date: 2018-02-21
 youTubeVideoId: JY3fuhYz72g
 youTubeAudioId: X2mA6L7qgns
 ---
