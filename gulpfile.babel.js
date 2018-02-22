@@ -27,6 +27,12 @@ gulp.task("build", ["css", "js", "cms-assets", "hugo"]);
 gulp.task("build-preview", ["css", "js", "cms-assets", "hugo-preview"]);
 
 gulp.task("css", () => (
+  gulp.src("./site/static/css/*.css")
+    .pipe(gulp.dest("./dist/css"))
+    .pipe(browserSync.stream())
+));
+
+gulp.task("build-css", () => (
   gulp.src("./src/css/*.css")
     .pipe(postcss([
       cssImport({from: "./src/css/main.css"}),
