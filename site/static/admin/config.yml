@@ -22,6 +22,7 @@ collections: # A list of collections the CMS should be able to edit
       - file: "site/content/_index.md"
         label: "Домашняя страница"
         name: "home"
+        delete: false
         fields:
           - {label: Заголовок, name: title, widget: string}
           - {label: Умная цитата, name: subtitle, widget: string}
