@@ -35,7 +35,6 @@ collections: # A list of collections the CMS should be able to edit
         delete: false
         fields:
           - {label: Заголовок, name: title, widget: string}
-          - {label: Умная цитата, name: subtitle, widget: string}
           - {label: "Youtube Video Id", name: youTubeVideoId, widget: "string", required: false}
           - {label: "Youtube Audio Id", name: "youTubeAudioId", widget: "string", required: false}     
           - {label: "Body", name: "body", widget: "markdown"}
