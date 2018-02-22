@@ -1,6 +1,10 @@
 ---
-title: "Home page"
-date: 2018-02-21T22:34:14-05:00
-draft: true
+title: Home page
+subtitle: >-
+  Сама вечность - это творение и разрушение миров, это циклы бытия и небытия;
+  миры возникают из пропасти абсолюта и затем исчезают в этой бездне.
+image: /img/about-direct-sourcing.jpg
+youTybeVideoId: JY3fuhYz72g
+youTubeAudioId: X2mA6L7qgns
 ---
 
