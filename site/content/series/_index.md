@@ -1,7 +1,8 @@
 ---
 title: Цыклы
-date: 2018-01-31T00:00:00-05:00
 youTubeVideoId: ''
 youTubeAudioId: ''
 ---
+![](/img/image10.png)
+
 Этот список цыклов будет пополняться.
